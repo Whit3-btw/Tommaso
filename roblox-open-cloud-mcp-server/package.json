@@ -1,0 +1,28 @@
+{
+  "name": "roblox-open-cloud-mcp-server",
+  "version": "1.0.0",
+  "description": "Server MCP per le API Open Cloud di Roblox: informazioni sull'esperienza, lettura dei DataStore, messaggi ai server live e caricamento di versioni del luogo.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "roblox-open-cloud-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "tsc && node --test dist/tests/server.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
